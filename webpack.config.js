@@ -41,8 +41,8 @@ const webConfig = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'lib.js',
-    library: "anchorOffset",
-    libraryExport: "default"
+    library: 'anchorOffset',
+    libraryExport: 'default'
   },
   module: webpackModule,
   plugins: webpackPlugins
