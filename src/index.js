@@ -1,8 +1,8 @@
-export function scrollToAnchor(id, offset) {
-  id = id.replace('#', '');
+export function scrollToAnchor(hash, offset) {
+  const id = hash.replace('#', '');
   const element = document.getElementById(id);
   if (element) {
-    var position = element.getBoundingClientRect().top;
+    var position = window.scrollY + element.getBoundingClientRect().top;
     window.scrollTo(0, position - offset);
   }
 }

@@ -12,5 +12,5 @@ export function getBoundingClientRect() {
     })
     .map(element => window.getComputedStyle(element).height)
     .reduce((sum, value) => sum + parseInt(value), 0);
-  return {top};
+  return {top: top - window.scrollY};
 }

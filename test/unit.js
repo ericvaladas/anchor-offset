@@ -6,7 +6,7 @@ import anchorOffset from '../src';
 
 describe('anchorOffset', () => {
   beforeEach(() => {
-    return JSDOM.fromFile('tests/test.html').then(dom => {
+    return JSDOM.fromFile('test/test.html').then(dom => {
       global.window = dom.window;
       global.document = dom.window.document;
       window.scrollTo = scrollTo;
