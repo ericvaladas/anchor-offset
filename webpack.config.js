@@ -19,15 +19,7 @@ const webpackPlugins = [
       'NODE_ENV': JSON.stringify('production')
     }
   }),
-  new webpack.LoaderOptionsPlugin({
-    minimize: true,
-    debug: false
-  }),
-  new webpack.optimize.UglifyJsPlugin({
-    compress: false,
-    mangle: false,
-    comments: false
-  })
+  new webpack.optimize.UglifyJsPlugin()
 ];
 
 const nodeConfig = {
