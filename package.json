@@ -1,6 +1,6 @@
 {
   "name": "anchor-offset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Offset scroll position for page anchors",
   "repository": {
     "type": "git",
