@@ -1,6 +1,6 @@
 {
   "name": "anchor-offset",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Offset scroll position for page anchors",
   "repository": {
     "type": "git",
@@ -15,7 +15,12 @@
     "prepublish": "npm run lint && npm run test && npm run build",
     "publish": "publish-release --token=$PUBLISH_RELEASE_TOKEN --notes=$npm_package_version --tag=$npm_package_version"
   },
-  "keywords": ["anchor", "hash", "offset", "scroll"],
+  "keywords": [
+    "anchor",
+    "hash",
+    "offset",
+    "scroll"
+  ],
   "author": "ericvaladas",
   "license": "ISC",
   "bugs": {
@@ -26,10 +31,15 @@
     "repo": "anchor-offset",
     "owner": "ericvaladas",
     "name": "anchor-offset",
-    "assets": ["dist/anchor-offset.js"],
+    "assets": [
+      "dist/anchor-offset.js"
+    ],
     "reuseRelease": true
   },
-  "files": ["README.md", "dist"],
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
