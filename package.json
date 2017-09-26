@@ -13,7 +13,7 @@
     "lint": "eslint src",
     "test": "nyc --reporter=html --reporter=text mocha --compilers js:babel-register test",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "prepublish": "npm run lint && npm run test && npm run build",
+    "prepare": "npm run lint && npm run test && npm run build",
     "publish": "publish-release --token=$PUBLISH_RELEASE_TOKEN --notes=$npm_package_version --tag=$npm_package_version"
   },
   "keywords": [
