@@ -12,7 +12,10 @@ Useful for websites that have fixed content at the top of the page, such as a na
 
 `anchorOffset(offset)`
 
-`offset`: the amount to offset in pixels.
+| Argument | Default | Description |
+| --- | --- | --- |
+| offset | `0` | The amount to offset in pixels. |
+
 
 
 
