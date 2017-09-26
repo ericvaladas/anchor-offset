@@ -27,7 +27,7 @@ const nodeConfig = {
   entry: ['./src/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'lib.node.js',
+    filename: 'lib.js',
     library: packageName,
     libraryTarget: 'umd'
   },
@@ -40,7 +40,7 @@ const webConfig = {
   entry: ['./src/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'lib.js',
+    filename: 'anchor-offset.js',
     library: 'anchorOffset',
     libraryExport: 'default'
   },
