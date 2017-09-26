@@ -29,6 +29,7 @@
     "assets": ["dist/anchor-offset.js"],
     "reuseRelease": true
   },
+  "files": ["README.md", "dist"],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
