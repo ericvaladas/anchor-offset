@@ -38,7 +38,7 @@
   },
   "files": [
     "README.md",
-    "dist"
+    "dist/lib.js"
   ],
   "devDependencies": {
     "babel-core": "^6.26.0",
