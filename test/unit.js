@@ -123,7 +123,7 @@ describe('anchorOffset', () => {
       });
 
       describe('click first hash', () => {
-        it('should scroll to first anchor with offset', (done) => {
+        it('should scroll to first anchor', (done) => {
           document.querySelector('[href="#one"]').click();
           setTimeout(() => {
             assert.equal(window.scrollY, 50);
@@ -133,7 +133,7 @@ describe('anchorOffset', () => {
       });
 
       describe('click second hash', () => {
-        it('should scroll to second anchor with offset', (done) => {
+        it('should scroll to second anchor', (done) => {
           document.querySelector('[href="#two"]').click();
           setTimeout(() => {
             assert.equal(window.scrollY, 550);
