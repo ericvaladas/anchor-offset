@@ -9,14 +9,16 @@ export function scrollToAnchor(hash, offset) {
 
 export default function(offset=0) {
   document.addEventListener('click', mouseEvent => {
-    const anchor = mouseEvent.target.hash;
-    if (anchor) {
-      mouseEvent.preventDefault()
-      if (window.location.hash === anchor) {
-        scrollToAnchor(anchor, offset);
-      }
-      else {
-        window.location.hash = anchor;
+    const { hash, pathname } = mouseEvent.target;
+    if (hash) {
+      if (window.location.pathname === pathname) {
+        mouseEvent.preventDefault()
+        if (window.location.hash === hash) {
+          scrollToAnchor(hash, offset);
+        }
+        else {
+          window.location.hash = hash;
+        }
       }
     }
   });
